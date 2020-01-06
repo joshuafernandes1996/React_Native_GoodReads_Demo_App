@@ -37,7 +37,7 @@ export class BookListContainer extends React.Component {
         const { getBookList } = this.props;
         this.setState({ ...this.state, page: 1 }, () => {
             getBookList({ q: this.state.searchValue, page: 1 });
-            Keyboard.dismiss()
+            Keyboard.dismiss() 
         })
     }
 
